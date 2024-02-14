@@ -1,0 +1,7 @@
+PS C:\Users\V2> mkdir free
+PS C:\Users\V2> cd free
+PS C:\Users\V2\free> git init
+PS C:\Users\V2\free> git add Account
+PS C:\Users\V2\free> git commit -m ""
+PS C:\Users\V2\free> git remote add origin https://github.com/ishiken1205/Free.git
+PS C:\Users\V2\free> git push --set-upstream origin master
