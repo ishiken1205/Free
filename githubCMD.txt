@@ -7,3 +7,6 @@ PS C:\Users\V2\free> git remote add origin https://github.com/ishiken1205/Free.g
 PS C:\Users\V2\free> git push --set-upstream origin master
 
 PS C:\Users\V2\free> git clone https://github.com/ishiken1205/Free.git
+
+PS C:\Users\ishik\free\Free> git pull origin master
+PS C:\Users\ishik\free\Free> git push origin master
