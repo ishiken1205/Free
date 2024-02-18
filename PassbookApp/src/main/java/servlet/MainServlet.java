@@ -27,6 +27,9 @@ public class MainServlet extends HttpServlet {
 			request.setAttribute("passbookList", passbookList);
 			RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/main.jsp");
 			rd.forward(request, response);
+		}if(link.equals("createPassbook")) {
+			RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/createPassbook.jsp");
+			rd.forward(request, response);
 		}
 	}
 	

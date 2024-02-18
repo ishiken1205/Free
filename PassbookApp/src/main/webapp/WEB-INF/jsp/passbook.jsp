@@ -17,6 +17,7 @@
 <hr>
 <%= date %>
 <h2>${passbook.title} 残高[${passbook.money}円]</h2>
+${str}
 <br>
 <br>
 <hr>

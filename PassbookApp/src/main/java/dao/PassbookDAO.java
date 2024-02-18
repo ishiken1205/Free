@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -30,7 +31,7 @@ public class PassbookDAO {
 			ResultSet rs = pStmt.executeQuery();
 		String passbookList = "";
 			while(rs.next()) {
-				passbookList += "<a class =\"initial\" href=\"PassbookServlet?link=" + rs.getString("TITLE") + "\">" + rs.getString("TITLE") + "</a><br>";
+				passbookList += "<a class =\"initial\" href=\"PassbookServlet?title=" + rs.getString("TITLE") + "\">" + rs.getString("TITLE") + "</a><br>";
 			}
 			return passbookList;
 		}
@@ -76,32 +77,32 @@ public class PassbookDAO {
 			return false;
 		}
 	}
-//	
-//	public Passbook indicatePassbook(Passbook passbook) {
-//		try {
-//			Class.forName("org.h2.Driver");
-//		}catch(ClassNotFoundException e) {
-//			throw new IllegalStateException("JDBCドライバを読み込めませんでした");
-//		}
-//		try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)) {
-//			String tableName = passbook.getId() + "_" + passbook.getTitle();
-//			String sql = "SELECT FROM" + tableName;
-//			PreparedStatement pStmt = conn.prepareStatement(sql);
-//			
-//			ResultSet rs = pStmt.executeQuery();
-//			rs.next();
-//				String id2 = rs.getString("ID");
-//				String title2 = rs.getString("TITLE");
-//				String memo = rs.getString("MEMO");
-//				Memo  m = new Memo();
-//				m.setId(id2);
-//				m.setTitle(title2);
-//				m.setMemo(memo);
-//				return m;
-//		}
-//		catch(SQLException e) {
-//			e.printStackTrace();
-//		}
-//		return null;
-//	}
+	
+	public String indicatePassbook(Passbook passbook) {
+		try {
+			Class.forName("org.h2.Driver");
+		}catch(ClassNotFoundException e) {
+			throw new IllegalStateException("JDBCドライバを読み込めませんでした");
+		}
+		try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)) {
+			String tableName = passbook.getId() + "_" + passbook.getTitle();
+			String sql = "SELECT * FROM " + tableName;
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+			
+			ResultSet rs = pStmt.executeQuery();
+			String str = "<table border=\"1\"><tr><th>日付</th><th>金額</th><th>詳細</th></tr>";
+			while(rs.next()) {
+				String date = new SimpleDateFormat("yyyy/MM/dd").format(rs.getDate("DATE"));
+				int money = rs.getInt("MONEY");
+				String purpose = rs.getString("PURPOSE");
+				str += "<tr><td>" + date + "</td><td>" + money + "</td><td>" + purpose + "</td></tr>";
+			}
+			str += "</table>";
+			return str;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 }

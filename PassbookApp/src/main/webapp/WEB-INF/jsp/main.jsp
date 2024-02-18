@@ -22,7 +22,7 @@ ${passbookList}<br>
 <br>
 <hr>
 <br>
-<a href="PassbookServlet?link=createPassbook">通帳の新規作成</a><br><br>
+<a href="MainServlet?link=createPassbook">通帳の新規作成</a><br><br>
 <a href="AccountServlet?link=logout">ログアウト</a><br><br>
 <a href="AccountServlet?link=deleteAccount">アカウント削除</a>
 </body>

@@ -27,19 +27,17 @@ public class PassbookServlet extends HttpServlet {
 	}
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		String link = request.getParameter("link");
-		if(link.equals("createPassbook")) {
-			RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/createPassbook.jsp");
-			rd.forward(request, response);
-		}
 		String title = request.getParameter("title");
-		PassbookDAO dao = new PassbookDAO();
 		HttpSession hs = request.getSession();
 		Account account = (Account) hs.getAttribute("loginAccount");
-		dao.indicatePassbook(account.getId(), title);
+		Passbook passbook = new Passbook();
+		passbook.setId(account.getId());
+		passbook.setTitle(title);
+		PassbookDAO dao = new PassbookDAO();
+		String str= dao.indicatePassbook(passbook);
+		request.setAttribute("str", str);
 		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/passbook.jsp");
 		rd.forward(request, response);
-		
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
