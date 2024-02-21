@@ -5,3 +5,8 @@ PS C:\Users\V2\free> git add Account
 PS C:\Users\V2\free> git commit -m ""
 PS C:\Users\V2\free> git remote add origin https://github.com/ishiken1205/Free.git
 PS C:\Users\V2\free> git push --set-upstream origin master
+
+PS C:\Users\V2\free> git clone https://github.com/ishiken1205/Free.git
+
+PS C:\Users\ishik\free\Free> git pull origin master
+PS C:\Users\ishik\free\Free> git push origin master
