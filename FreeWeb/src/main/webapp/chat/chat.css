@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+.body {
+	width: 480px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #000000;
+}
+
+.title_label {
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+}
+
+.subtitle_label {
+	margin-bottom: 30px;
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.msg_block {
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.id_block {
+	display: flex;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.password_block {
+	display: flex;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.password_check_block {
+	display: flex;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.name_block {
+	display: flex;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.id_label {
+	display: inline-block;
+	width: 150px;
+	font-size: 25px;
+	text-align: right;
+}
+
+.password_label {
+	display: inline-block;
+	width: 150px;
+	font-size: 25px;
+	text-align: right;
+}
+
+.password_check_label {
+	display: inline-block;
+	width: 150px;
+	font-size: 25px;
+	text-align: right;
+}
+
+.name_label {
+	display: inline-block;
+	width: 150px;
+	font-size: 25px;
+	text-align: right;
+}
+
+.colon {
+	display: inline-block;
+	font-size: 25px;
+	width: 40px;
+	text-align: center;
+}
+
+.login_form {
+	width: 280px;
+	height: 60px;
+	font-size: 40px;
+}
+
+/* 各ボタンのCSS */
+
+.login_button_block {
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.login_button {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #ffa500;
+	border: 6px solid #ff8c00;
+	color: #ffffff;
+	border-radius: 30px;
+	padding: 6px 18px 6px 18px;
+	cursor: pointer;
+}
+
+.register_button_block {
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.register_button {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #87cefa;
+	border: 6px solid #00bfff;
+	color: #ffffff;
+	border-radius: 30px;
+	padding: 6px 18px 6px 18px;
+	cursor: pointer;
+}
+
+.to_register_button_block {
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.to_register_button {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #87cefa;
+	border: 6px solid #00bfff;
+	color: #ffffff;
+	border-radius: 30px;
+	padding: 6px 18px 6px 18px;
+	cursor: pointer;
+}
+
+.to_login_button_block {
+	margin-top: 20px;
+}
+
+.to_login_button {
+	background: #ffffff;
+	border: 1px solid #000000;
+	cursor: pointer;
+}
+
+.back_button_block {
+	margin-top: 20px;
+}
+
+.back_button {
+	background: #ffffff;
+	border: 1px solid #000000;
+	cursor: pointer;
+}
+
+.logout_button_block {
+	margin-bottom: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.logout_button {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #87cefa;
+	border: 6px solid #00bfff;
+	color: #ffffff;
+	border-radius: 30px;
+	padding: 6px 18px 6px 18px;
+	cursor: pointer;
+}
+
+.to_my_page_button_block {
+	margin-bottom: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.to_my_page_button {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #ffa500;
+	border: 6px solid #ff8c00;
+	color: #ffffff;
+	border-radius: 30px;
+	padding: 6px 18px 6px 18px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.send_chat_button_block {
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.send_chat_button {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #00ee6e;
+	border: 6px solid #00cc3c;
+	color: #ffffff;
+	border-radius: 30px;
+	padding: 6px 18px 6px 18px;
+	cursor: pointer;
+}
+
+/* マイページ */
+
+.search_user_label {
+	margin-top: 20px;
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.msg_block_my_page {
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.search_user_id_block {
+	display: flex;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.search_user_id_label {
+	font-size: 25px;
+	margin-left: 40px;
+}
+
+.search_user_colon {
+	font-size: 25px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.search_user_id {
+	width: 280px;
+	height: 25px;
+	font-size: 20px;
+}
+
+.search_user_button {
+	margin-left: 10px;
+	height: 31px;
+	background: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.chat_log_label {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.chat_log_scroll {
+	overflow-y: scroll;
+	width: calc(100% - 10px);
+	height: 500px;
+	border: 1px solid #888888;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.chat_log_block {
+	height: 100px;
+	cursor: pointer;
+}
+
+.chat_log_name {
+	width: 100%;
+	font-size: 30px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.chat_log_text {
+	display: inline-block;
+	width: 346px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.chat_log_date {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+
+/* チャット画面 */
+
+.to_user_name_label {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.chat_scroll {
+	overflow-y: scroll;
+	width: calc(100% - 5px);
+	height: 500px;
+	border: 1px solid #888888;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.no_chat {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.chat_date_block {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.chat_date {
+	display: inline-block;
+	padding: 4px 10px 4px 10px;
+	font-size: 16px;
+	border: 2px solid #ffffff;
+	border-radius: 20px;
+	background-color: #888888;
+	color: #ffffff;
+}
+
+.my_text_block {
+	width: 100%;
+	text-align: right;
+}
+
+.your_text_block {
+	width: 100%;
+}
+
+.my_text {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 5px;
+	padding: 4px 10px 4px 10px;
+	font-size: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 20px;
+	background-color: #00ff7f;
+	max-width: 300px;
+	line-break: anywhere;
+	text-align: left;
+	white-space: pre-wrap;
+}
+
+.your_text {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 4px 10px 4px 10px;
+	font-size: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 20px;
+	background-color: #eeeeee;
+	max-width: 300px;
+	line-break: anywhere;
+	white-space: pre-wrap;
+}
+
+.my_date {
+	display: inline-block;
+}
+
+.your_date {
+	display: inline-block;
+}
+
+.msg_block_chat {
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.send_text {
+	width: 476px;
+	font-size: 20px;
+}

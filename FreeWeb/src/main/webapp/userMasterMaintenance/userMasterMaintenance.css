@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.body {
+	width: 480px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #000000;
+}
+
+.title_label {
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.main {
+	margin-left: 20px;
+}
+
+.msg {
+	margin-bottom: 20px;
+	color: red;
+	font-weight: bold;
+}
+
+/* 処理区分の行 */
+.process_division_block {
+	margin-bottom: 20px;
+}
+
+.process_division_label {
+	display: inline-block;
+	width: 100px;
+}
+
+.process_division_colon {
+	display: inline-block;
+}
+
+.process_division {
+	display: inline-block;
+}
+
+.process_division_list {
+	cursor: pointer;
+}
+
+/* ユーザーIDの行 */
+
+.user_id_block {
+	margin-bottom: 20px;
+}
+
+.user_id_label {
+	display: inline-block;
+	width: 100px;
+}
+
+.user_id_colon {
+	display: inline-block;
+}
+
+.user_id_form {
+	display: inline-block;
+}
+
+.execute_button_block {
+	display: inline-block;
+	margin-left: 16px;
+}
+
+.execute_button {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	cursor: pointer;
+}
+
+.cancel_button_block {
+	margin-left: 15px;
+	float: right;
+}
+
+.cancel_button {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	cursor: pointer;
+}
+
+/* ユーザー情報 */
+
+.user_info_block {
+	border: 1px solid #000000;
+}
+
+.user_info_label {
+	margin: 10px;
+}
+
+.user_info_table_block {
+	margin: 0px 20px 20px 30px;
+}
+
+.user_info_table {
+	border-collapse: collapse;
+}
+
+.user_info_table td {
+	border: 1px solid #000000;
+}
+
+.td_left {
+	background-color: #ddeeff;
+	width: 200px;
+}
+
+.td_right {
+	width: 200px;
+}
+
+/* 戻るボタン */
+
+.back_button_block {
+	margin-top: 20px;
+}
+
+.back_button {
+	background: #ffffff;
+	border: 1px solid #000000;
+	cursor: pointer;
+}

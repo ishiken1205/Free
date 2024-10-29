@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+.body {
+	width: 480px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #000000;
+}
+
+.title_label {
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* タイマーセット画面 */
+
+.set_timer_label {
+	font-size: 20px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.msg_block {
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.set_timer_form_block {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.set_timer_form {
+	width: 80px;
+	height: 80px;
+	font-size: 60px;
+	text-align: center;
+}
+
+.set_timer_form::-webkit-inner-spin-button,
+.set_timer_form::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance:textfield;
+}
+
+.set_timer_unit_hour {
+	display: inline;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.set_timer_unit_minute {
+	display: inline;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.set_timer_unit_second {
+	display: inline;
+	font-size: 20px;
+}
+
+.set_button_block {
+	margin-top: 30px;
+}
+
+.set_button {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #ffa500;
+	border: 6px solid #ff8c00;
+	color: #ffffff;
+	border-radius: 30px;
+	padding: 6px 18px 6px 18px;
+	cursor: pointer
+}
+
+/* タイマー画面 */
+
+.time_main {
+	width: 100%;
+	text-align: center;
+	font-size: 80px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.timer_button_block {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.start_button_block {
+	display: inline;
+}
+
+.stop_button_block {
+	display: inline;
+}
+
+.reset_button_block {
+	display: inline;
+	margin-left: 20px;
+}
+
+.start_button {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #ffa500;
+	border: 6px solid #ff8c00;
+	color: #ffffff;
+	border-radius: 30px;
+	padding: 6px 18px 6px 18px;
+	cursor: pointer;
+	width: 168px;
+}
+
+.stop_button {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #ffa500;
+	border: 6px solid #ff8c00;
+	color: #ffffff;
+	border-radius: 30px;
+	padding: 6px 18px 6px 18px;
+	cursor: pointer;
+	width: 168px;
+}
+
+.reset_button {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #87cefa;
+	border: 6px solid #00bfff;
+	color: #ffffff;
+	border-radius: 30px;
+	padding: 6px 18px 6px 18px;
+	cursor: pointer
+}
